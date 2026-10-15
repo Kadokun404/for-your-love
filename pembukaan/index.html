@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Hai, Pika! — Pembukaan</title>
+  <meta name="description" content="Ada yang pengen disampaikan. Dariku Alpinan, padamu Merantika.">
+  <meta name="theme-color" content="#FFD93D">
+  <meta property="og:title" content="Untuk Pika">
+  <meta property="og:description" content="Dariku Alpinan, padamu Merantika.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23FF6B9D'/%3E%3Ctext x='50' y='72' font-size='64' text-anchor='middle'%3E%E2%99%A5%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="shell">
+
+  <header class="topbar">
+    <a class="brand" href="/pembukaan" data-go>Untuk Pika</a>
+    <nav class="steps" aria-label="Halaman">
+      <a class="step on" href="/pembukaan" data-go><b>1</b><span>Pembukaan</span></a>
+      <a class="step" href="/ungkapan" data-go><b>2</b><span>Ungkapan</span></a>
+      <a class="step" href="/penutup" data-go><b>3</b><span>Penutup</span></a>
+    </nav>
+  </header>
+
+  <main class="stage two">
+    <!-- stiker yang bisa digeser -->
+    <div class="sticker burst hide-sm" style="top:3%;left:44%;rotate:-12deg" aria-hidden="true">
+      <svg viewBox="0 0 100 100"><polygon points="50,2 61,22 82,12 80,35 98,42 84,60 96,80 74,80 68,98 50,86 32,98 26,80 4,80 16,60 2,42 20,35 18,12 39,22" fill="#FF6B9D" stroke="#111" stroke-width="4" stroke-linejoin="round"/></svg>
+      <span>HAI!</span>
+    </div>
+    <div class="sticker hide-sm" style="background:var(--mint);bottom:4%;left:44%;rotate:-6deg" aria-hidden="true">geser aku ✋</div>
+    <div class="sticker hide-sm" style="background:var(--orange);top:8%;right:3%;rotate:7deg" aria-hidden="true">100% jujur</div>
+
+    <section>
+      <span class="eyebrow">ini ada 3 halaman dariku yang keknya ga terlalu penting :3</span>
+      <h1 class="mega">Hai,<br><span class="hl pink">Pika!</span></h1>
+      <p class="lead">maap kalo jelek 😹🙏</p>
+
+      <div class="actions">
+        <button id="openBtn" class="btn" type="button">Buka amplopnya ✉</button>
+        <a id="nextBtn" class="btn pink" href="/ungkapan" data-go hidden>Lanjut →</a>
+      </div>
+
+      <div class="chips">
+        <span class="chip">Dariku: Alpinan</span>
+        <span class="chip">Padamu: Merantika</span>
+        <span class="chip">± 2 menit baca</span>
+      </div>
+    </section>
+
+    <section class="env-wrap" aria-label="Amplop">
+      <div class="env" id="env" role="button" tabindex="0" aria-expanded="false" aria-label="Buka amplop">
+        <div class="env-back">
+          <svg viewBox="0 0 400 300" preserveAspectRatio="none" aria-hidden="true"><rect x="0" y="0" width="400" height="300" fill="#FF6B9D"/></svg>
+        </div>
+        <div class="env-letter">
+          <small>buat mu nih yang namanya</small>
+          <h3>Merantika</h3>
+          <p>baca bener bener</p>
+          <p style="margin-top:auto;font-family:var(--font-d);text-transform:uppercase">— Alpinan</p>
+        </div>
+        <div class="env-front">
+          <svg viewBox="0 0 400 300" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,0 200,165 400,0 400,300 0,300" fill="#4D96FF"/></svg>
+        </div>
+        <div class="env-flap">
+          <svg viewBox="0 0 400 165" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,0 400,0 200,165" fill="#FFD93D"/></svg>
+        </div>
+        <div class="env-seal" aria-hidden="true">♥</div>
+      </div>
+      <span class="hint" id="hint">tap amplopnya ↑</span>
+    </section>
+  </main>
+
+  <footer class="marquee" aria-hidden="true">
+    <div class="marquee-track" data-items="Dariku Alpinan|Padamu Merantika|Untuk Pika"></div>
+  </footer>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

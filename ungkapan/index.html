@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ungkapan — Untuk Pika</title>
+  <meta name="description" content="Ungkapan dari Alpinan untuk Merantika.">
+  <meta name="theme-color" content="#FF6B9D">
+  <meta property="og:title" content="Halo Pikaa :3">
+  <meta property="og:description" content="Dariku Alpinan, padamu Merantika.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23FF6B9D'/%3E%3Ctext x='50' y='72' font-size='64' text-anchor='middle'%3E%E2%99%A5%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="shell">
+
+  <header class="topbar">
+    <a class="brand" href="/pembukaan" data-go>Untuk Pika</a>
+    <nav class="steps" aria-label="Halaman">
+      <a class="step" href="/pembukaan" data-go><b>1</b><span>Pembukaan</span></a>
+      <a class="step on" href="/ungkapan" data-go><b>2</b><span>Ungkapan</span></a>
+      <a class="step" href="/penutup" data-go><b>3</b><span>Penutup</span></a>
+    </nav>
+  </header>
+
+  <main class="stage two deck-layout">
+    <div class="sticker burst hide-sm" style="top:2%;left:34%;rotate:10deg" aria-hidden="true">
+      <svg viewBox="0 0 100 100"><polygon points="50,2 61,22 82,12 80,35 98,42 84,60 96,80 74,80 68,98 50,86 32,98 26,80 4,80 16,60 2,42 20,35 18,12 39,22" fill="#4D96FF" stroke="#111" stroke-width="4" stroke-linejoin="round"/></svg>
+      <span style="color:#fff">BACA<br>YA</span>
+    </div>
+    <div class="sticker hide-sm" style="background:var(--yellow);bottom:6%;left:4%;rotate:-5deg" aria-hidden="true">pelan-pelan aja</div>
+
+    <section>
+      <span class="eyebrow">Halaman 2 dari 3</span>
+      <h1 class="mega sm">Ungkapan</h1>
+      <div class="counter" aria-live="polite"><span id="cur">01</span><small id="total">/05</small></div>
+      <p class="tip">Tap kartunya, pakai tombol, geser, atau panah ← → di keyboard buat lanjut.</p>
+    </section>
+
+    <section>
+      <div class="deck" id="deck">
+        <article class="slide" style="--c:var(--yellow)">
+          <span class="num">Hai, ini aku</span>
+          <div>
+            <h2>Ini Alpinan.</h2>
+          </div>
+          <p>Udah lama aku pengen nulis ini, tapi selalu bingung mulainya dari mana. Jadi aku bikin aja tempatnya.</p>
+        </article>
+
+        <article class="slide" style="--c:var(--pink)">
+          <span class="num">Kamu</span>
+          <div>
+            <h2>dasar piyo</h2>
+          </div>
+          <p>best gf, jujur aku ga pernah segininya, hebat kamu.</p>
+        </article>
+
+        <article class="slide" style="--c:var(--blue);color:#fff">
+          <span class="num">aku cuma mau bilang</span>
+          <div>
+            <h2>ini di dia.</h2>
+          </div>
+          <p>makasih banget udah mau jadi gf ku, walaupun keknya terpaksa :v</p>
+        </article>
+
+        <article class="slide" style="--c:var(--mint)">
+          <span class="num">aku harap</span>
+          <div>
+            <h2>kamu bisa jadi lebih baik lagi</h2>
+          </div>
+          <p>okeyy sayang?</p>
+        </article>
+
+        <article class="slide" style="--c:var(--orange)">
+          <span class="num">ohh iyaa lupa jir</span>
+          <div>
+            <h2>semua org butuh proses</h2>
+          </div>
+          <p>jadi kamu bisa mulai dari awal lagi tanpa aku ☺️</p>
+        </article>
+      </div>
+
+      <div class="deck-ctrl">
+        <div class="bars" aria-hidden="true">
+          <span class="bar on"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+        <div class="nav">
+          <button id="prev" class="btn white sq" type="button" aria-label="Sebelumnya">←</button>
+          <button id="next" class="btn" type="button">Lanjut baca →</button>
+          <a id="toEnd" class="btn pink" href="/penutup" data-go hidden>Ke penutup →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="marquee" aria-hidden="true">
+    <div class="marquee-track" data-items="Dariku Alpinan|Padamu Merantika|Untuk Pika"></div>
+  </footer>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>
